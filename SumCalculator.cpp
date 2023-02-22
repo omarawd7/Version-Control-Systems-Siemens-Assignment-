@@ -18,7 +18,16 @@ for (size_t i = 0; i < arr.size(); i++)
 }
 return sum;
 }
-
+int getMin(vector <int> &arr){
+int min=arr[0];
+for (size_t i = 1; i < arr.size(); i++)
+{
+ if(min>arr[i]){
+    min=arr[i];
+ }
+}
+return min;
+}
 int getAverage(vector <int> &arr){
 int sum=0;
 for (size_t i = 0; i < arr.size(); i++)
@@ -28,7 +37,6 @@ for (size_t i = 0; i < arr.size(); i++)
 
 return sum/arr.size();
 }
-
 int main() {
 
 vector <int> arr;
@@ -39,10 +47,5 @@ for (size_t i = 0; i <10; i++)
 
 cout<<getSum(arr);
 cout<<getAverage(arr);
-
-
-
-
-
-
+cout<<getMin(arr);
 }
