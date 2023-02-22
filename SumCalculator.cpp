@@ -38,6 +38,7 @@ for (size_t i = 0; i <10; i++)
 }
 
 cout<<getSum(arr);
+cout<<getAverage(arr);
 
 
 
