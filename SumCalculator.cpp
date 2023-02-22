@@ -16,8 +16,17 @@ for (size_t i = 0; i < arr.size(); i++)
 {
  sum+=arr[i];
 }
-
 return sum;
+}
+
+int getAverage(vector <int> &arr){
+int sum=0;
+for (size_t i = 0; i < arr.size(); i++)
+{
+ sum+=arr[i];
+}
+
+return sum/arr.size();
 }
 
 int main() {
